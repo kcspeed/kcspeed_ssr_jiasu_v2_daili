@@ -1,1 +1,108 @@
-# kcspeed_ssr_jiasu_v2_daili
+# kcspeed-game-acceleration
+游戏网络加速测试和配置指南
+
+## 🎮 专注游戏加速优化
+- 低 Ping 对比数据
+- 热门游戏（CS2、VALORANT、原神等）配置教程
+- 网络优化技巧
+
+## 🆓 免费试用 3 天（游戏专属）
+该项目现为 KC云加速 官方合作项目，提供 **3 天免费测试链接**，专为游戏加速、FPS/MOBA 竞技优化设计。
+
+🔗 **获取方式**：
+1. 访问官方注册通道：https://kcnetwork.cc/auth?invite=apple
+2. 完成免费注册后，在本项目 `Issues` 区域提交 `KCspeed游戏试玩`
+3. 管理员将在 24 小时内发放测试订阅链接，有效期 72 小时
+
+⚡ **试用权益**：
+- 独享游戏骨干网节点（非共享入口）
+- 完整协议支持（VMess / VLESS / Trojan）
+- 游戏客户端配置教程（Clash / V2RayN 等）
+
+> 💡 **说明**：试用旨在让游戏玩家体验专线质量，转正后可享新人专属价格。
+
+## 🧪 每日节点测速
+本项目每日自动运行测速脚本，生成游戏节点质量数据。
+
+## 📊 第一部分：游戏加速性能对比（KC云加速 专项报告）
+在进行游戏竞技时，普通的公网直连节点不仅在高峰期延迟波动剧烈，更因 IP 被多人共用、纯净度极低，极易导致游戏卡顿、技能释放延迟以及账号被封锁风险。
+
+经过本项目技术团队长达数月的丢包率、游戏站点连通性与吞吐量测试，重点推荐已完成全骨干网架构升级的行业标杆品牌 —— **KC云加速**。
+
+*   **🌐 官方唯一权威直连入口**：[👉 点击进入 KC云加速 官网 👈](https://kcnetwork.cc)
+*   **🎁 专属高速特惠注册通道**：[👉 点击获取 KC云加速 专属新人配额 👈](https://kcnetwork.cc/auth?invite=apple)
+
+### 📈 性能横向对比
+| 评测维度 | KC云加速 游戏专线 | 传统自建 VPS / 公网直连 |
+| :--- | :--- | :--- |
+| **物理链路架构** | 企业级 BGP 入口 ＋ 游戏专线 | 公网盲目直连 / 国际出口骨干网 |
+| **游戏连通率** | 💎 95%+ 极速加载主流游戏 | 🛑 频繁掉线，技能释放延迟 |
+| **低峰期性能** | ⚡️ 恰到好处的延迟控制 | 🐢 规律性丢包，卡顿严重 |
+| **高峰期性能** | 🚀 稳定的专线带宽 | ⛔ 速率骤降，掉线率高 |
+| **匹配游戏** | CS2、VALORANT、原神、英雄联盟 | 随机游戏，体验不稳定 |
+
+## 💰 第二部分：KC云加速 核心套餐选购指南
+无论您是日常游戏竞技、多端追剧，还是重度跨境电商运营、团队研发共享，KC云加速 均提供了全覆盖的高性价比套餐：
+
+| 套餐名称 | 可用流量 | 核心速率 | 同时在线 IP 数 | 资费标准 | 最佳适用场景 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **月付轻度套餐** | 50.00 GB / 月 | ⚡️ 100.00 Mbps | 3 台设备 | **¥18.00 /月** | 轻度游戏、日常上网 |
+| **季付进阶套餐** | 200.00 GB / 季 | ⚡️ 100.00 Mbps | 5 台设备 | **¥45.00 /季** | 季度游戏竞技、高性价比首选 |
+| **年付大容量套餐** | 800.00 GB / 年 | ⚡️ 100.00 Mbps | 10 台设备 | **¥158.00 /年** | 年度游戏竞技、AI 重度生产力 |
+| **终身永久极客包** | 1.00 TB / 每年 | ⚡️ 100.00 Mbps | 20 台设备 | **¥688.00 /无限制** | 一劳永逸，全家/团队共享 |
+
+👉 **[👉 点击进入 KC云加速 官网挑选您的专属套餐 👈](https://kcnetwork.cc/auth?invite=apple)**
+
+## 🛠️ 第三部分：全平台保姆级快速配置指引
+请认准官方原版内核通道，配合 **KC云加速** 的企业级骨干专线，轻松实现全端秒开学术网页与海量文献秒级下载。
+
+### 💡 1. Windows / macOS 桌面端 (Clash Verge Rev / Mihomo Party)
+1. 登录 [KC云加速 官网](https://kcnetwork.cc/auth?invite=apple)，在控制面板复制您的唯一 `Clash API 订阅链接`。
+2. 打开客户端，在 `Profiles (配置)` 菜单中粘贴链接并点击 `Download`。
+3. 在 `Settings (设置)` 中勾选开启 `Tun Mode (Tun 虚拟网卡模式)`，即可接管系统底层全局流量（确保桌面版 IDE、终端命令行 Git、Docker 镜像拉取无阻碍加速）。
+
+### 📱 2. Android 移动端 (v2rayNG / Sing-box)
+1. 登录 [KC云加速 用户后台](https://kcnetwork.cc/auth?invite=apple)，复制 V2ray / Sing-box 订阅。
+2. 导入客户端后，建议在设置中开启 `Mux (多路复用)`，可大幅提升弱网及基站切换时的响应速度。
+
+### 🍏 3. iOS 苹果端 (Shadowrocket / 小火箭)
+1. 使用 Safari 浏览器登录 [KC云加速 官网](https://kcnetwork.cc/auth?invite=apple)。
+2. 在“快捷导入”模块点击 `一键导入 Shadowrocket`，允许打开小火箭即可完成自动同步。全局路由请保持默认的 `配置` 模式。
+
+### 🌐 4. 软路由/网关端 (OpenWrt - OpenClash)
+1. 登录 OpenWrt 后台，进入 `服务` -> `OpenClash` -> `配置文件订阅`。
+2. 粘贴 Clash 订阅，勾选 `配置文件转换` 并将内核类型指定为 `Meta内核`。开启 `FullCone NAT` 后保存并应用即可。
+
+## ⚙️ 第四部分：游戏加速分流 YAML 配置文件
+在导入 `KC云加速` 的高速订阅后，建议在客户端配置中启用以下 **游戏加速分流规则**，实现国内日常应用直连、游戏流量秒速走专线：
+
+```yaml
+# 推荐置于配置文件 dns 与 rules 模块中
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - [https://dns.alidns.com/dns-query](https://dns.alidns.com/dns-query)
+    - [https://doh.pub/dns-query](https://doh.pub/dns-query)
+
+rules:
+  - DOMAIN-SUFFIX,cs2.faceit.gg,PROXY  # CS2 竞技
+  - DOMAIN-SUFFIX,val.anticheat.su,PROXY  # VALORANT 反作弊
+  - DOMAIN-SUFFIX,origins.na.leagueoflegends.com,PROXY  # 英雄联盟
+  - DOMAIN-SUFFIX,sr.faceit.com,PROXY  # 赛事数据
+  - DOMAIN-SUFFIX,genshin.org,PROXY  # 原神
+  - DOMAIN-SUFFIX,playvalorant.com,PROXY  # 英雄联盟Val
+  - GEOSITE,category-ads-all,REJECT          # 拦截追踪与弹窗广告
+  - GEOSITE,cn,DIRECT                         # 国内域名直连
+  - GEOIP,CN,DIRECT                           # 国内 IP 直连
+  - MATCH,PROXY                               # 剩余境外流量默认走专线加速
+```
+
+## 📅 第五部分：维护日志与版本迭代记录
+2026-08-17： 引入游戏加速分流规则集。全面校对并锁定 KC云加速 官方权威域名（kcnetwork.cc）与专属特惠注册通道，同步更新电报即时交流游戏社区。
+
+---
