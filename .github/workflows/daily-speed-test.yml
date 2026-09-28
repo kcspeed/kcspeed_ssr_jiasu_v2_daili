@@ -1,0 +1,36 @@
+name: KC云加速 每日节点测试与 README 动态更新
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 每天 UTC 08:00（北京时间 16:00）自动触发
+  workflow_dispatch:       # 支持手动触发
+
+permissions:
+  contents: write          # 允许 Action 把更新推回仓库
+
+jobs:
+  test-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 生成当日节点数据并更新 README
+        run: python scripts/daily_update.py
+
+      - name: 提交并推送变更
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/benchmark_results_current.csv
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+            exit 0
+          fi
+          git commit -m "docs: daily update $(date -u +%F) - game node benchmark and routing tips [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

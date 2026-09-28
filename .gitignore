@@ -1,0 +1,6 @@
+# 每日生成的带时间戳明细数据不入库，只保留 benchmark_results_current.csv
+data/benchmark_results_[0-9]*.csv
+
+# Python 缓存
+__pycache__/
+*.pyc
