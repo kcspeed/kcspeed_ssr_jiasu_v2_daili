@@ -98,8 +98,9 @@ def trim_blocks(text, keep=7):
 
 
 def main():
-    from datetime import datetime
-    today = datetime.now().strftime("%Y-%m-%d")
+    from datetime import datetime, timedelta, timezone
+    # 固定按北京时间取日期（运行器是 UTC，定时任务会被推迟，避免跨日写错日期）
+    today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
 
     best = speed_test.main()          # 生成数据 + 打印摘要
     node, lat, dl = best["node_name"], best["latency"], best["download"]
